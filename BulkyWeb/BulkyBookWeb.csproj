@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d33af9fe-db31-4fef-84c2-fb821a5c3fdc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.0-preview.2.23153.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="8.0.0-preview.2.23153.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.0-preview.2.23153.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="8.0.0-preview.2.23153.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0-preview.2.23153.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+    <PackageReference Include="Stripe.net" Version="41.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Product\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BulkyBook.DataAccess">
+      <HintPath>..\Bulky.DataAccess\bin\Debug\net8.0\BulkyBook.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="BulkyBook.Models">
+      <HintPath>..\Bulky.Models\bin\Debug\net8.0\BulkyBook.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="BulkyBook.Utility">
+      <HintPath>..\Bulky.Utility\bin\Debug\net8.0\BulkyBook.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
